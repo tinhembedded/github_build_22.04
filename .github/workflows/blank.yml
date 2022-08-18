@@ -41,7 +41,7 @@ jobs:
                   libcairo2-dev libpango1.0-dev libdbus-1-dev libgbm-dev libxcursor-dev           
             git clone https://gitlab.freedesktop.org/wayland/weston.git 
             cd weston
-            meson build/ --prefix=$WLD
+            meson build/ --prefix=$WLD --libdir=/usr/lib --sysconfdir=/etc
             sudo ninja -C build/ install
 
             cd ..
