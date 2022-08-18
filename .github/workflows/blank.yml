@@ -27,5 +27,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          sudo apt install gcc g++ make cmake
-          sudo apt install libpgm-5.2-0 libpgm-dev
+          sudo apt install libpgm-dev
