@@ -34,9 +34,8 @@ jobs:
                             libgstreamer-plugins-base1.0-dev libpipewire-0.3-dev libxml2-dev meson
             sudo apt install libxkbcommon-x11-dev libpixman-1-dev libinput-dev libdrm-dev wayland-protocols \
                   libcairo2-dev libpango1.0-dev libdbus-1-dev libgbm-dev libxcursor-dev           
-            wget https://github.com/wayland-project/weston/archive/8.0.93.tar.gz 
-            tar -xf 8.0.93.tar.gz 
-            cd weston-8.0.93
+            git clone https://gitlab.freedesktop.org/wayland/weston.git 
+            cd weston
             meson build/
             sudo ninja -C build/ install
 
