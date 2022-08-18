@@ -27,5 +27,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          sudo apt install  python3-distutils python2-minimal python2 dh-python 2to3 python-is-python3 libtool autoconf libdrm-dev python libinput-dev libwayland-egl-backend-dev glmark2-es2-wayland 
+          sudo apt install software-properties-common
+           sudo add-apt-repository ppa:deadsnakes/ppa
+           sudo apt install python3.9
+          sudo apt install libtool autoconf libdrm-dev python libinput-dev libwayland-egl-backend-dev glmark2-es2-wayland 
            
