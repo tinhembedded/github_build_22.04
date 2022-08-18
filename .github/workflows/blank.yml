@@ -27,6 +27,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
+          export WLD=$HOME/install   # change this to another location if you prefer
+          export LD_LIBRARY_PATH=$WLD/lib
+          export PKG_CONFIG_PATH=$WLD/lib/pkgconfig/:$WLD/share/pkgconfig/
+          export PATH=$WLD/bin:$PATH
+          
           sudo apt install gcc g++ make cmake
           
             sudo apt install libjpeg-dev libwebp-dev libsystemd-dev libpam-dev libva-dev freerdp2-dev \
