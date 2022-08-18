@@ -27,4 +27,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          sudo apt install libjpeg-dev libwebp-dev libsystemd-dev libpam-dev libva-dev freerdp2-dev
+          sudo apt install libjpeg-dev libwebp-dev libsystemd-dev libpam-dev libva-dev freerdp2-dev libxcb-composite0-dev liblcms2-dev libcolord-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libpipewire-0.2-dev\
+          libxml2-dev meson 
+
