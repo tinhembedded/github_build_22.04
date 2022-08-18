@@ -41,7 +41,7 @@ jobs:
                   libcairo2-dev libpango1.0-dev libdbus-1-dev libgbm-dev libxcursor-dev           
             wget https://github.com/wayland-project/weston/archive/10.0.0.tar.gz 
             tar -xf 10.0.0.tar.gz 
-            cd ~/weston-10.0.0
+            cd weston-10.0.0
             meson build/
             sudo ninja -C build/ install
 
