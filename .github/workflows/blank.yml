@@ -27,6 +27,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          sudo apt install libxkbcommon-x11-dev libpixman-1-dev libinput-dev libdrm-dev wayland-protocol
+          sudo apt install libxkbcommon-x11-dev libpixman-1-dev libinput-dev libdrm-dev wayland-protocols
            
            
