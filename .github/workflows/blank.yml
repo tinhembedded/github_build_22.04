@@ -28,5 +28,5 @@ jobs:
       - name: Run a one-line script
         run: |
           sudo apt install gcc g++ make cmake
-          sudo apt install libxcb-present-dev libxshmfence-dev libgbm-dev libsdl2-dev libgtk-3-dev libgles2-mesa-dev libpixman-1-dev
+          sudo apt install libxcb-present-dev libxshmfence-dev libgbm-dev libsdl2-dev libgtk-3-dev libgles2-mesa-dev libpixman-1-dev    libtool autoconf libdrm-dev python libinput-dev libwayland-egl-backend-dev glmark2-es2-wayland 
            
