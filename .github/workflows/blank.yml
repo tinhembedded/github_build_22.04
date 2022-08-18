@@ -27,5 +27,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
+          sudo apt-get update
+          sudo apt-get install packagename
           sudo apt install libxcb-composite0-dev liblcms2-dev libcolord-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libpipewire-0.3-dev libxml2-dev meson 
 
