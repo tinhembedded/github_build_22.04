@@ -52,7 +52,7 @@ jobs:
           sudo apt install python
           sudo apt install libtool autoconf libdrm-dev libinput-dev libwayland-egl-backend-dev glmark2-es2-wayland 
           
-          wget https://archive.mesa3d.org//mesa-19.0.0.tar.gz
+          wget https://archive.mesa3d.org//mesa-18.2.0.tar.xz 
           tar -xf  mesa-18.2.0.tar.xz 
           cd mesa-18.2.0/
           ./configure --prefix=/usr/lib/mesa-virtio --exec_prefix=/usr/lib/mesa-virtio --libdir=/usr/lib/mesa-virtio \ 
