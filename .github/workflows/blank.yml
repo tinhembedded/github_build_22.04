@@ -58,7 +58,7 @@ jobs:
           ./configure --prefix=/usr/lib/mesa-virtio --exec_prefix=/usr/lib/mesa-virtio --libdir=/usr/lib/mesa-virtio \ 
                                           --includedir=/usr/include/mesa-virtio --sysconfdir=/etc/mesa-virtio --datadir=/usr/share/mesa-virtio \ 
                                           --with-dri-drivers=swrast --with-gallium-drivers=swrast,virgl \
-                                          --enable-dri3=yes --with-platforms=drm,wayland,x11 --disable-glx
+                                          --enable-dri3=yes --with-platforms=drm,wayland,x11 --disable-glx --enable-autotools
           make
           sudo make install
            
