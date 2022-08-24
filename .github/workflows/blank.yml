@@ -83,6 +83,7 @@ jobs:
                                           --enable-dri3=yes --with-platforms=drm,wayland,x11 --disable-glx
                 make
                 sudo make install
+                cd 
   build_4:
        runs-on: ubuntu-20.04
        outputs:
