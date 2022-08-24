@@ -97,6 +97,8 @@ jobs:
                 sudo apt-get install -y build-essential libncurses5-dev gcc libssl-dev grub2 bc bison flex libelf-dev
                 sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.8.18.tar.xz 
                 ls -la
+                mkdir hihihihi
+                ls -l
                 sudo tar -xf linux-5.8.18.tar.xz 
                 cd linux-5.8.18
                 
