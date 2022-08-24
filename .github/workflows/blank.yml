@@ -101,5 +101,7 @@ jobs:
                 which tar
                 sudo tar -xf linux-5.8.18.tar.xz
                 ls -la
-
+                cd linux-5.8.18
+                make oldconfig
+                sudo make -j8 deb-pkg
            
