@@ -109,8 +109,10 @@ jobs:
                 sudo tar -xf linux-5.8.18.tar.xz
                 ls -la
                 cd linux-5.8.18
+                cp /boot/config-5.8.0-50-generic .config
                 sudo make oldconfig
-                sudo make -j8
+                sudo make clean
+                sudo make -j8 deb-pkg
                 ls -la 
                 cd ..
                 ls -l
