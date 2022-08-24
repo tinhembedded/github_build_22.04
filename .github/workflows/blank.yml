@@ -99,11 +99,5 @@ jobs:
                 ls -la
                 ls -l
                 which tar
-                sudo tar -xf linux-5.8.18.tar.xz linux-5.8.18
-                cd linux-5.8.18
-                
-                make oldconfig
-                make -j8 deb-pkg
-                dpkg –i linux-*.deb
-                ls -l *.deb
+
            
