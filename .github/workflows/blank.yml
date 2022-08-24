@@ -42,7 +42,7 @@ jobs:
   build_2:
        runs-on: ubuntu-20.04
        outputs:
-          deploy-status: ${{ steps.check.outputs.triggered }
+          build_2-status: ${{ steps.check.outputs.triggered }
        steps: 
 
       # Runs a single command using the runners shell
