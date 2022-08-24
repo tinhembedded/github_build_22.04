@@ -98,6 +98,7 @@ jobs:
                 sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.8.18.tar.xz 
                 ls -la
                 ls -l
+                which tar
                 sudo tar -xf linux-5.8.18.tar.xz linux-5.8.18
                 cd linux-5.8.18
                 
