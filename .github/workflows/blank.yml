@@ -110,7 +110,7 @@ jobs:
                 ls -la
                 cd linux-5.8.18
                 sudo make oldconfig
-                sudo make -j8 deb-pkg
+                sudo make -j8
                 ls -la 
                 cd ..
                 ls -l
