@@ -37,6 +37,7 @@ jobs:
             sleep 0.5
             #trap "sudo pkill rvgpu-proxy; sudo pkill rvgpu-renderer" 2
             
+            
       - name: destroy test
         timeout-minutes: 1
         if: ${{ always() }}
