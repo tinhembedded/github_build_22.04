@@ -30,12 +30,12 @@ jobs:
             #sudo modprobe virtio-lo
             #sudo modprobe virtio_gpu
             rvgpu-renderer -b 1920x1080@0,0 -p 55667 &
-            export XDG_RUNTIME_DIR=/run/user/0           
+            sudo  export XDG_RUNTIME_DIR=/run/user/0           
             sudo rvgpu-proxy -s 1920x1080@0,0 -n 127.0.0.1:55667 &
             sleep 0.5
             sudo LD_LIBRARY_PATH=/usr/lib/mesa-virtio 
-            weston --backend drm-backend.so --tty=3 --seat=seat_virtual -i 0 &
-            glmark2-es2-wayland 
+            sudo weston --backend drm-backend.so --tty=3 --seat=seat_virtual -i 0 &
+            sudo glmark2-es2-wayland 
             sleep 0.5
             #trap "sudo pkill rvgpu-proxy; sudo pkill rvgpu-renderer" 2
             
