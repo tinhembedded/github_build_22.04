@@ -33,7 +33,7 @@ jobs:
             export XDG_RUNTIME_DIR=/run/user/0           
             sudo rvgpu-proxy -s 1920x1080@0,0 -n 127.0.0.1:55667 &
             sleep 0.5
-            sudo LD_LIBRARY_PATH=/usr/lib/mesa-virtio glmark2-es2-drm --device-path=/dev/dri/card1 -s 1920x1080 --visual-config red=8
+            sudo LD_LIBRARY_PATH=/usr/lib/mesa-virtio glmark2-es2-wayland --device-path=/dev/dri/card1 -s 1920x1080 --visual-config red=8
             sleep 0.5
             #trap "sudo pkill rvgpu-proxy; sudo pkill rvgpu-renderer" 2
             
