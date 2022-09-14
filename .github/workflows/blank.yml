@@ -27,8 +27,8 @@ jobs:
       - name: Run a test
         id: run
         run: |
-            sudo modprobe virtio-lo
-            sudo modprobe virtio_gpu
+            #sudo modprobe virtio-lo
+            #sudo modprobe virtio_gpu
             rvgpu-renderer -b 1920x1080@0,0 -p 55667 &
             export XDG_RUNTIME_DIR=/run/user/0           
             sudo rvgpu-proxy -s 1920x1080@0,0 -n 127.0.0.1:55667 &
