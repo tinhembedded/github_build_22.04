@@ -28,4 +28,4 @@ jobs:
         id: run
         run: |
            cd /home/kerken
-           bash nocrlc.sh
+           bash nocrlc.sh >> logcat.txt
