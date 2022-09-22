@@ -100,7 +100,7 @@ jobs:
             sudo rm -rf /run/user/0
             sudo mkdir -p /run/user/0
             
-            sudo export XDG_RUNTIME_DIR=/run/user/0
+            export XDG_RUNTIME_DIR=/run/user/0
             sudo rvgpu-proxy -s 800x600@0,0 -n 127.0.0.1:55667 -f 5&
             jobs -l
             disown -a
