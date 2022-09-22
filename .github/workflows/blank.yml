@@ -41,33 +41,33 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
-    runs-on: self-hosted
-    steps: 
+#   build:
+#     runs-on: self-hosted
+#     steps: 
       #- uses: actions/checkout@v2.4.2
       # Temporarily download source from gitlab
-      - name: Fetch source code
-        shell: bash
-        id: fetch_code
-        run: |
-          cd /home/kerken/workspace/2022/fy21-gvh431/remote-virtio-gpu
-      - name: Config build
-        shell: bash
-        id: config_build
-        run: |
-          pwd
-          cd $WORKING_DIR_PATH
-          pwd
-          mkdir build
-          ls -al
-          git apply ../fix_build.patch
-          cmake -B build -DCMAKE_BUILD_TYPE=Release -DVIRTIO_LO_DIR=../rvgpu-driver-linux
-      - name: Build UHMI
-        shell: bash
-        id: build_code
-        run: |
-          cd $WORKING_DIR_PATH
-          make -C build
+#       - name: Fetch source code
+#         shell: bash
+#         id: fetch_code
+#         run: |
+#           cd /home/kerken/workspace/2022/fy21-gvh431/remote-virtio-gpu
+#       - name: Config build
+#         shell: bash
+#         id: config_build
+#         run: |
+#           pwd
+#           cd $WORKING_DIR_PATH
+#           pwd
+#           mkdir build
+#           ls -al
+#           git apply ../fix_build.patch
+#           cmake -B build -DCMAKE_BUILD_TYPE=Release -DVIRTIO_LO_DIR=../rvgpu-driver-linux
+#       - name: Build UHMI
+#         shell: bash
+#         id: build_code
+#         run: |
+#           cd $WORKING_DIR_PATH
+#           make -C build
           
       #- name: Install UHMI
       #  shell: bash
@@ -76,7 +76,7 @@ jobs:
 
   run_uhmi:
     runs-on: self-hosted
-    needs: [build]
+#     needs: [build]
     steps: 
       #Runs a single command using the runners shell
       - name: Clean previous running steps
