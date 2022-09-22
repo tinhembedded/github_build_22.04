@@ -50,7 +50,7 @@ jobs:
         shell: bash
         id: fetch_code
         run: |
-          cd /home/nghia/Documents
+          cd /home/kerken/Documents
           rm -rf fy21-gvh431_remote-virtio-gpu
           git clone git@prdcvgit.prdcv.local:gvh431/fy21-gvh431_remote-virtio-gpu.git
           cd fy21-gvh431_remote-virtio-gpu
