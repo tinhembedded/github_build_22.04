@@ -119,7 +119,8 @@ jobs:
         shell: bash
         run: |
               export LD_LIBRARY_PATH=/usr/lib/mesa-virtio 
-              glmark2-es2-drm -s 800x600 --visual-config red=8
+              weston --backend drm-backend.so --tty=2 --seat=seat_virtual -i 0 --log=/tmp/weston.log &
+              glmark2-es2-wayland
         # run: sudo LD_LIBRARY_PATH=/usr/lib/mesa-virtio glmark2-es2-drm --device-path=/dev/dri/card5 -s 800x600 --visual-config red=8
       - name: destroy test
         timeout-minutes: 1
