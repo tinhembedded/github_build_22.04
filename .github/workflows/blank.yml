@@ -94,6 +94,7 @@ jobs:
         shell: bash
         if: ${{ always() }}
         run: |
+            sudo modprobe virtio-gpu
             rvgpu-renderer -b 800x600@0,0 -p 55667 &
             sudo modprobe virtio-lo
             sudo rm -rf /run/user/0
