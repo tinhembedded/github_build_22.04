@@ -37,7 +37,7 @@ concurrency:
   
 env:
   SAVE_DIR_NAME: collection
-  WORKING_DIR_PATH: /home/nghia/Documents/fy21-gvh431_remote-virtio-gpu/
+  WORKING_DIR_PATH: /home/kerken/workspace/2022/fy21-gvh431/remote-virtio-gpu
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -159,7 +159,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: collection
-          path: /home/nghia/Documents/fy21-gvh431_remote-virtio-gpu/collection
+          path: /home/kerken/workspace/2022/fy21-gvh431/remote-virtio-gpu/collection
           
   #reboot_cancel:
   #  name: Reboot on cancel
