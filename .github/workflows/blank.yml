@@ -120,7 +120,7 @@ jobs:
         shell: bash
         run: |
               export LD_LIBRARY_PATH=/usr/lib/mesa-virtio 
-              glmark2-es2-drm --device-path=/dev/dri/card1 -s 800x600 --visual-config red=8 --expected-fps=5
+              glmark2-es2-drm -s 800x600 --visual-config red=8 --expected-fps=5
         # run: sudo LD_LIBRARY_PATH=/usr/lib/mesa-virtio glmark2-es2-drm --device-path=/dev/dri/card5 -s 800x600 --visual-config red=8
       - name: destroy test
         timeout-minutes: 1
